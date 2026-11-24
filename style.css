@@ -1,0 +1,86 @@
+html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'IM Fell English', normal;
+  color: #D7CFC9;
+  background-color: #1A1309
+}
+
+.wrapper {  
+  max-width: 95%; 
+  display: flex;
+  flex-direction: row;
+  height: 95%;
+}
+
+
+
+.left, .right {
+
+  /* max-width: 50%; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left {
+    max-width: 65%;
+}
+
+.right {
+    max-width: 35%;
+}
+
+
+/* .left {
+  align-items: center;
+  justify-content: center;
+} */
+
+.profile-picture-wrap {
+  position: relative;
+  width: 400px;
+}
+
+.profile-picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.profile-picture-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 28px 12px #1A1309;
+  pointer-events: none;
+}
+
+
+
+
+.social-links {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #7AB8FF;
+  padding: 4px;
+}
+
+.social-links a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
